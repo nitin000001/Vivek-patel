@@ -1,23 +1,29 @@
 import React from "react";
-import YouTube from "react-youtube";
 
 const VideoPlayer = () => {
-  const opts = {
-    height: "100%", // Full height of the container
-    width: "100%",  // Full width of the container
-    playerVars: {
-      autoplay: 1, // Automatically play the video
-      loop: 1, // Loop the video
-      mute: 1, // Mute the video
-      controls: 0, // Hide YouTube controls
-      showinfo: 0, // Hide video information
-      modestbranding: 1, // Minimal YouTube branding
-      rel: 0, // Prevent showing related videos at the end
-      playlist: "D3qHYGO-W-c", // Required for looping the same video
-    },
-  };
-
-  return <YouTube videoId="D3qHYGO-W-c" opts={opts} className="video-player" />;
+  return (
+    <div className="relative w-full h-full">
+      {/* 9:16 video for small devices */}
+      <video
+        className="block sm:hidden w-full h-full object-cover"
+        src="/9 16.mp4"
+        autoPlay
+        loop
+        muted
+        controls={false}
+      />
+      
+      {/* Vivek intro video for larger devices */}
+      <video
+        className="hidden sm:block w-full h-full object-cover"
+        src="/vivek intro.mp4"
+        autoPlay
+        loop
+        muted
+        controls={false}
+      />
+    </div>
+  );
 };
 
 export default VideoPlayer;
