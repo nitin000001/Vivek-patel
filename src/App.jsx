@@ -2,6 +2,8 @@ import React from "react";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import CardList from "./Components/Card";
+import VideoPlayer from "./Components/VideoPlayer";
+import GetInTouch from "./Components/GetInTouch";
 
 const App = () => {
   return (
@@ -51,27 +53,12 @@ const App = () => {
         {/* Video Section */}
         <section className="relative w-full h-0 pb-[177.78%] md:pb-[56.25%] rounded-lg overflow-hidden mb-8">
           <section className="relative w-full h-0 pb-[177.78%] md:pb-[56.25%] rounded-lg overflow-hidden mb-8">
-            <video
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://videos.pexels.com/video-files/5540220/5540220-sd_360_640_30fps.mp4"
-              controls
-              autoPlay
-              loop
-              muted
-            >
-              Your browser does not support the video tag.
-            </video>
-            {/* Overlay */}
-            {/* <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-white text-[5vh] md:text-[10vh] font-bold bg-black bg-opacity-50 px-4 py-2 rounded-md text-center">
-          @PropertyWallah
-        </span>
-      </div> */}
+            <VideoPlayer />
           </section>
 
           {/* Overlay */}
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-white text-[4vh] md:text-[10vh] font-bold bg-black bg-opacity-50 px-4 py-2 rounded-md text-center">
+            <span className="text-white text-[4vh] md:text-[10vh] font-bold  bg-opacity-50 px-4 py-2 rounded-md text-center">
               @PropertyWallah
             </span>
             <span>
@@ -108,56 +95,17 @@ const App = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="mt-12">
-          <div className="flex items-center w-full">
-            <hr className="flex-grow border-gray-300" />
-            <span className="px-4 text-white text-xl font-semibold">
-              Get in Touch
-            </span>
-            <hr className="flex-grow border-gray-300" />
-          </div>
-          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a
-              href="https://www.youtube.com/c/propertywallah"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-red-500 hover:bg-red-700 text-white text-center py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 flex items-center justify-center gap-2"
-            >
-              <FaYoutube />
-              YouTube
-            </a>
-            <a
-              href="tel:7770017997"
-              className="bg-green-600 hover:bg-green-700 text-white text-center py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 flex items-center justify-center"
-            >
-              Contact Me
-            </a>
-            <a
-              href="https://www.facebook.com/propertywallah_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-800 hover:bg-blue-900 text-white text-center py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 flex items-center justify-center gap-2"
-            >
-              <FaFacebook />
-              Facebook
-            </a>
-            <a
-              href="https://www.instagram.com/propertywallah_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-pink-600 hover:bg-pink-700 text-white text-center py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 flex items-center justify-center gap-2"
-            >
-              <FaInstagram />
-              Instagram
-            </a>
-          </div>
-        </section>
+       
 
-      <div className="text-white text-3xl m-4">
-        <h1>Primum Plan</h1>
-      </div>
+        <div className="text-white text-center text-3xl m-9 bg-orange-500 rounded p-3">
+          <h1>Primum Plan's</h1>
+        </div>
 
         <CardList />
+
+
+        <GetInTouch />
+
       </main>
 
       {/* Footer */}
