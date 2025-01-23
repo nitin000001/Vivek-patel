@@ -9,16 +9,15 @@ import malad from "../../public/malad.jpeg";
 import andheri from "../../public/andheri.jpeg";
 import goregoan from "../../public/goregoan.jpeg";
 
-
 const cards = [
   {
     title: "Residential Real Estate Dahisar",
     location: "Dahisar",
-    image:  dahisar,
+    image: dahisar,
     category: "VILLAS",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
-    callLink: "tel:+917770017997", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997",
+    callLink: "tel:+917770017997",
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ7bC3tl0xaSCpeZdMgj_BGo",
   },
   {
@@ -27,102 +26,104 @@ const cards = [
     image: borivali,
     category: "APARTMENTS",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
-    callLink: "tel:+917770017997", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997",
+    callLink: "tel:+917770017997",
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ7Do2lds5gohfvvGZKtSxYP",
   },
   {
     title: "Residential Real Estate Kandivali",
     location: "Kandivali",
-    image:kandivali,
+    image: kandivali,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
-    callLink: "tel:+917770017997", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997",
+    callLink: "tel:+917770017997",
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ50a997MDbeO9KSWu3Blj4_",
   },
   {
     title: "Residential Real Estate Malad",
     location: "Malad",
-    image:malad,
+    image: malad,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
-    callLink: "tel:+917770017997", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997",
+    callLink: "tel:+917770017997",
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ6yRxcDL-r0q9n5h1VxLg5m",
   },
   {
     title: "Residential Real Estate Andheri",
     location: "Andheri",
-    image:andheri,
+    image: andheri,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
-    callLink: "tel:+917770017997", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997",
+    callLink: "tel:+917770017997",
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ6CpyFMq2TYYo9F1B5a3CMs",
   },
   {
     title: "Residential Real Estate Goregoan",
     location: "Goregoan",
-    image:goregoan,
+    image: goregoan,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
-    callLink: "tel:+917770017997", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997",
+    callLink: "tel:+917770017997",
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ6CpyFMq2TYYo9F1B5a3CMs",
   },
 ];
 
 const Card = ({ card }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white mx-auto">
       <div className="relative">
         <img
-          className="w-full h-48 object-center object-contain"  // Changed to object-contain
+          className="w-full h-48 object-cover p-3"
           src={card.image}
           alt={card.title}
         />
       </div>
-      <div className="p-4">
-        <h3 className="text-xl font-semibold">{card.title}</h3>
-        <div className="flex items-center gap-2">
+      <div className="p-6">
+        <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+        <div className="flex items-center gap-2 mb-4">
           <p className="text-gray-600">{card.LocationIcon}</p>
           <p className="text-gray-600">{card.location}</p>
         </div>
-        <a
-          href={card.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-blue-900 text-white text-xs font-bold py-1 px-3 rounded mt-3 inline-block"
-        >
-          View
-        </a>
-        <a
-          href={card.whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-green-500 text-lg float-right mt-3 ml-2"
-        >
-          <FaWhatsapp />
-        </a>
-        <a
-          href={card.callLink}
-          className="text-blue-600 text-lg float-right mt-3"
-        >
-          <IoMdCall />
-        </a>
+        <div className="flex justify-between items-center">
+          <a
+            href={card.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-900 text-white text-sm font-bold py-2 px-4 rounded transition hover:bg-blue-700"
+          >
+            View
+          </a>
+          <div className="flex items-center space-x-4">
+            <a
+              href={card.whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-500 text-xl"
+            >
+              <FaWhatsapp />
+            </a>
+            <a href={card.callLink} className="text-blue-600 text-xl">
+              <IoMdCall />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-
 const CardList = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-      {cards.map((card, index) => (
-        <Card key={index} card={card} />
-      ))}
+    <div className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {cards.map((card, index) => (
+          <Card key={index} card={card} />
+        ))}
+      </div>
     </div>
   );
 };

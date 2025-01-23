@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 flex flex-col items-center ">
       {/* Hero Section */}
-      <main className="w-full max-w-5xl shadow-xl rounded-xl ">
+      <main className="w-full  shadow-xl rounded-xl ">
         {/* Video Section */}
         <section className="relative rounded-lg overflow-hidden mb-8">
           <div className="relative w-full aspect-w-16 aspect-h-9 md:aspect-w-16 md:aspect-h-9">
@@ -57,12 +57,14 @@ const App = () => {
             <h1 className="vivek text-3xl md:text-6xl font-bold uppercase">
               Vivek Patel
             </h1>
-            <p className="text-base md:text-lg mt-2 ">Foounder Of Propertywallah</p>
+            <p className="text-base md:text-lg mt-2 ">
+              Foounder Of Propertywallah
+            </p>
           </div>
         </section>
 
         {/* About Section */}
-        <section className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row items-center gap-6">
+        <section className="bg-gray-800 p-6 rounded-lg flex flex-col md:flex-row  justify-center items-center gap-6">
           {/* Image Section */}
           <div className="text-center">
             <img
@@ -73,16 +75,20 @@ const App = () => {
           </div>
 
           {/* Description Section */}
-          <div className="text-white text-center md:text-left">
+          <div className="text-white text-center sm:text-center md:text-left">
             <p className="mb-4 leading-relaxed">
-              Vivek Patel @Propertywallah <br />
+              Vivek Patel Founder of Propertywallah Maharera no- A99000024245{" "}
+              <br />
               No brokerage Builder Properties at Best Prices Buy | Sell | Invest
-              <br />● Residential ● Commercial
+              ● Residential ● Commercial
             </p>
-            <p>
-              ✔ Real Estate Expert <br />
-              ✔ Channel Partner with Builders <br />
-              ✔ Digital Content Creator <br />✔ Finance & Insurance Advisor
+            <p className="sm:w-full md:w-3/4">
+              ✅️ Buy Sell Invest in Mumbai Real estate with Vivek Patel <br />
+              ✅️ Sole Selling Property Management Services <br />
+              ✅️ Residential & Commercial Real Estate Expert <br />
+              ✅️ Channel Partner with Lead Developers across Mumbai <br />
+              ✅️ Digital Real Estate Content Creator <br />
+              ✅️ Financial Planning Consultant & Loan Expert
             </p>
             <GetInTouch />
           </div>
