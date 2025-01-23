@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import CardList from "./Components/Card";
 import VideoPlayer from "./Components/VideoPlayer";
@@ -34,6 +35,14 @@ const App = () => {
                 <FaFacebook />
               </a>
               <a
+                href="https://wa.me/917770017997"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-400 cursor-pointer transition duration-300"
+              >
+                <FaWhatsapp />
+              </a>
+              <a
                 href="https://www.youtube.com/c/propertywallah"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,17 +58,19 @@ const App = () => {
               >
                 <FaXTwitter />
               </a>
+             
             </div>
           </div>
 
-          {/* Overlay Text */}
+          {/* Founder of Propertywallah Realty Text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
             <h1 className="vivek text-3xl md:text-6xl font-bold uppercase">
               Vivek Patel
             </h1>
             <p className="text-base md:text-lg mt-2 ">
-              Founder Of Propertywallahreality
+              Founder of Propertywallah Realty
             </p>
+            <p className="text-sm ">Maharera no- A99000024245</p>
           </div>
         </section>
 
@@ -76,18 +87,15 @@ const App = () => {
 
           {/* Description Section */}
           <div className="text-white text-center sm:text-center md:text-left">
-            <p className="mb-4 leading-relaxed">
-            ● <span className="font-bold text-xl">Vivek Patel </span>| <span className="font-bold text-lg text-gray-200">Founder of Propertywallah</span> | <span className="text-sm text-gray-300">Maharera no- A99000024245</span>{" "}
-              <br />
-              No brokerage Builder Properties at Best Prices 
-            </p>
-            <p className="sm:w-full md:w-3/4">
-              ✅️ Buy | Sell Invest in Mumbai Real estate with Vivek Patel <br />
-              ✅️ Sole Selling Property Management Services <br />
-              ✅️ Residential & Commercial Real Estate Expert <br />
-              ✅️ Channel Partner with Lead Developers across Mumbai <br />
-              ✅️ Digital Real Estate Content Creator <br />
-              ✅️ Financial Planning Consultant & Loan Expert
+            
+            <p className="sm:w-full mt-4 md:w-3/4 flex flex-col items-start">
+              <span>✅️ No brokerage on Builder Properties </span>
+              <span>✅️ Buy | Sell Invest in Mumbai Real estate </span>
+              <span>✅️ Sole Selling Property Management </span>
+             <span> ✅️ Residential & Commercial Real Estate </span> 
+              <span>✅️ Channel Partner with Leading Developers</span>
+               <span> ✅️ Digital Real Estate Content Creator </span>
+              <span>✅️ Financial  Consultant & Loan Expert</span>
             </p>
             <GetInTouch />
           </div>
