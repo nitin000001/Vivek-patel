@@ -74,7 +74,12 @@ const cards = [
 
 const Card = ({ card }) => {
   return (
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white mx-auto">
+    <a
+      href={card.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="max-w-sm cursor-pointer rounded-lg overflow-hidden shadow-lg bg-white mx-auto block"
+    >
       <div className="relative">
         <img
           className="w-full h-48 object-cover p-3"
@@ -89,30 +94,30 @@ const Card = ({ card }) => {
           <p className="text-gray-600">{card.location}</p>
         </div>
         <div className="flex justify-between items-center">
-          <a
-            href={card.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-900 text-white text-sm font-bold py-2 px-4 rounded transition hover:bg-blue-700"
-          >
-            View
-          </a>
+          <p className="bg-blue-900 text-white text-sm font-bold py-2 px-4 rounded">
+            View Details
+          </p>
           <div className="flex items-center space-x-4">
             <a
               href={card.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-500 text-xl"
+              onClick={(e) => e.stopPropagation()} // Prevents the click event from propagating to the card
             >
               <FaWhatsapp />
             </a>
-            <a href={card.callLink} className="text-blue-600 text-xl">
+            <a
+              href={card.callLink}
+              className="text-blue-600 text-xl"
+              onClick={(e) => e.stopPropagation()} // Prevents the click event from propagating to the card
+            >
               <IoMdCall />
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -15,7 +15,7 @@ const VideoPlayer = () => {
       
       {/* Vivek intro video for larger devices */}
       <video
-        className="hidden sm:block w-full h-[700px] object-cover object-center"
+        className="hidden sm:block w-full h-full object-cover object-center"
          src="/9 16.mp4"
         autoPlay
         loop

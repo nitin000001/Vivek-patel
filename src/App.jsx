@@ -58,7 +58,7 @@ const App = () => {
               Vivek Patel
             </h1>
             <p className="text-base md:text-lg mt-2 ">
-              Foounder Of Propertywallah
+              Founder Of Propertywallahreality
             </p>
           </div>
         </section>
@@ -77,13 +77,12 @@ const App = () => {
           {/* Description Section */}
           <div className="text-white text-center sm:text-center md:text-left">
             <p className="mb-4 leading-relaxed">
-              Vivek Patel Founder of Propertywallah Maharera no- A99000024245{" "}
+            ● <span className="font-bold text-xl">Vivek Patel </span>| <span className="font-bold text-lg text-gray-200">Founder of Propertywallah</span> | <span className="text-sm text-gray-300">Maharera no- A99000024245</span>{" "}
               <br />
-              No brokerage Builder Properties at Best Prices Buy | Sell | Invest
-              ● Residential ● Commercial
+              No brokerage Builder Properties at Best Prices 
             </p>
             <p className="sm:w-full md:w-3/4">
-              ✅️ Buy Sell Invest in Mumbai Real estate with Vivek Patel <br />
+              ✅️ Buy | Sell Invest in Mumbai Real estate with Vivek Patel <br />
               ✅️ Sole Selling Property Management Services <br />
               ✅️ Residential & Commercial Real Estate Expert <br />
               ✅️ Channel Partner with Lead Developers across Mumbai <br />
