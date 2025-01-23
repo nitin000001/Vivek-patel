@@ -7,57 +7,57 @@ import GetInTouch from "./Components/GetInTouch";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 flex flex-col items-center px-4">
+    <div className="min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 flex flex-col items-center ">
       {/* Hero Section */}
-      <main className="w-full max-w-5xl shadow-xl rounded-xl p-6 md:p-10">
+      <main className="w-full max-w-5xl shadow-xl rounded-xl ">
         {/* Video Section */}
         <section className="relative rounded-lg overflow-hidden mb-8">
           <div className="relative w-full aspect-w-16 aspect-h-9 md:aspect-w-16 md:aspect-h-9">
             <VideoPlayer />
-          
 
-          {/* Social Media Icons */}
-          <div className="absolute top-4 left-4 flex  space-x-4   text-white">
-            <a
-              href="https://www.instagram.com/propertywallah_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-pink-500 transition duration-300"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://www.facebook.com/propertywallah_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-600 transition duration-300"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://www.youtube.com/c/propertywallah"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-red-500 transition duration-300"
-            >
-              <FaYoutube />
-            </a>
-            <a
-              href="https://twitter.com/propertywallah_"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition duration-300"
-            >
-              <FaXTwitter />
-            </a>
-           
-          </div>
+            {/* Social Media Icons */}
+            <div className="absolute cursor-pointer top-4 left-4 flex space-x-4 text-white z-10">
+              <a
+                href="https://www.instagram.com/propertywallah_"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-500 cursor-pointer transition duration-300"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.facebook.com/propertywallah_"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 transition duration-300"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://www.youtube.com/c/propertywallah"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-red-500 transition duration-300"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="https://twitter.com/propertywallah_"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 cursor-pointer transition duration-300"
+              >
+                <FaXTwitter />
+              </a>
+            </div>
           </div>
 
           {/* Overlay Text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <h1 className="text-3xl md:text-6xl font-bold uppercase">Vivek Patel</h1>
-            <p className="text-base md:text-lg mt-2 ">CEO OF Propertywalla</p>
+            <h1 className="vivek text-3xl md:text-6xl font-bold uppercase">
+              Vivek Patel
+            </h1>
+            <p className="text-base md:text-lg mt-2 ">Foounder Of Propertywallah</p>
           </div>
         </section>
 
@@ -89,8 +89,8 @@ const App = () => {
         </section>
 
         {/* Premium Plans Section */}
-        <div className="text-white text-center text-3xl my-8 bg-orange-500 rounded-lg p-4">
-          <h1>Premium Plans</h1>
+        <div className="text-white text-center  bg-orange-500 rounded-lg p-2 m-8">
+          <p>Check Out Our Properties</p>
         </div>
 
         {/* Cards Section */}

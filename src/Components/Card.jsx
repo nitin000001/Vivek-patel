@@ -27,8 +27,8 @@ const cards = [
     image: borivali,
     category: "APARTMENTS",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/919876543210", // Updated WhatsApp number
-    callLink: "tel:+919876543210", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
+    callLink: "tel:+917770017997", // Updated Call number
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ7Do2lds5gohfvvGZKtSxYP",
   },
   {
@@ -37,8 +37,8 @@ const cards = [
     image:kandivali,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/919876543211", // Updated WhatsApp number
-    callLink: "tel:+919876543211", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
+    callLink: "tel:+917770017997", // Updated Call number
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ50a997MDbeO9KSWu3Blj4_",
   },
   {
@@ -47,8 +47,8 @@ const cards = [
     image:malad,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/919876543212", // Updated WhatsApp number
-    callLink: "tel:+919876543212", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
+    callLink: "tel:+917770017997", // Updated Call number
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ6yRxcDL-r0q9n5h1VxLg5m",
   },
   {
@@ -57,8 +57,8 @@ const cards = [
     image:andheri,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/919876543213", // Updated WhatsApp number
-    callLink: "tel:+919876543213", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
+    callLink: "tel:+917770017997", // Updated Call number
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ6CpyFMq2TYYo9F1B5a3CMs",
   },
   {
@@ -67,8 +67,8 @@ const cards = [
     image:goregoan,
     category: "PENTHOUSES",
     LocationIcon: <CiLocationOn />,
-    whatsappLink: "https://wa.me/919876543213", // Updated WhatsApp number
-    callLink: "tel:+919876543213", // Updated Call number
+    whatsappLink: "https://wa.me/917770017997", // Updated WhatsApp number
+    callLink: "tel:+917770017997", // Updated Call number
     link: "https://www.youtube.com/playlist?list=PLE15IvBqFDJ6CpyFMq2TYYo9F1B5a3CMs",
   },
 ];
