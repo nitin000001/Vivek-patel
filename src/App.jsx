@@ -58,7 +58,6 @@ const App = () => {
               >
                 <FaXTwitter />
               </a>
-             
             </div>
           </div>
 
@@ -87,15 +86,24 @@ const App = () => {
 
           {/* Description Section */}
           <div className="text-white text-center sm:text-center md:text-left">
-            
-            <p className="sm:w-full mt-4 md:w-3/4 flex flex-col items-start">
-              <span>✅️ No brokerage on Builder Properties </span>
-              <span>✅️ Buy | Sell Invest in Mumbai Real estate </span>
+            <p className="sm:w-full mt-4 sm:text-xs flex flex-col items-start">
+              {/* <span>✅️ <span className="text-[60px]">0 </span><span className="font-bold">%</span>  brokerage on Builder Properties  </span> */}
+              <div className="flex items-end gap-3 ">
+                <span className="text-green-500 flex items-center space-x-2">
+                  <span className="text-[60px] sm:text-[80px] font-bold leading-none">
+                    0<span className="font-bold text-lg sm:text-2xl">%</span>
+                  </span>
+                </span>
+                <p className="text-white text-sm sm:text-base font-medium">
+                  Brokerage on Builder Properties
+                </p>
+              </div>
+              <span>✅️ Buy | Sell | Invest in Mumbai Real estate </span>
               <span>✅️ Sole Selling Property Management </span>
-             <span> ✅️ Residential & Commercial Real Estate </span> 
-              <span>✅️ Channel Partner with Leading Developers</span>
-               <span> ✅️ Digital Real Estate Content Creator </span>
-              <span>✅️ Financial  Consultant & Loan Expert</span>
+              <span> ✅️ Residential & Commercial Real Estate </span>
+              <span>✅️ Channel Partner with Lead Developers</span>
+              <span> ✅️ Digital Real Estate Content Creator </span>
+              <span>✅️ Financial Consultant & Loan Expert</span>
             </p>
             <GetInTouch />
           </div>
@@ -116,6 +124,14 @@ const App = () => {
       <footer className="w-full max-w-5xl text-center py-6 mt-8">
         <p className="text-white text-sm">
           &copy; 2025 Vivek Patel. All rights reserved.
+        </p>
+        <p className="text-white text-xs">
+          <a
+            href="https://portfolio-70m62f1i0-nitinmaurya0717-gmailcoms-projects.vercel.app/"
+            target="_blank"
+          >
+            Design & Developed by Nitin Maurya.
+          </a>
         </p>
       </footer>
     </div>
