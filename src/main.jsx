@@ -1,10 +1,66 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// index.js
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import Layout from "./Components/Layout";
 
-createRoot(document.getElementById('root')).render(
+// Dahisar Pages
+import DahisarPage from "./pages/Dahisar/DahisarPage";
+import DahisarDetails from "./pages/Dahisar/DahisarDetails";
+
+// Borivali Pages
+import BorivaliPage from "./pages/Borivali/BorivaliPage";
+import BorivaliDetails from "./pages/Borivali/BorivaliDetails";
+
+// Kandivali Pages
+import KandivaliPage from "./pages/Kandivali/KandivaliPage";
+import KandivaliDetails from "./pages/Kandivali/KandivaliDetails";
+
+// New Pages: Andheri, Malad, Goregaon
+import AndheriPage from "./pages/Andheri/AndheriPage";
+import AndheriDetails from "./pages/Andheri/AndheriDetails";
+
+import MaladPage from "./Pages/Malad/MaladPage";
+import MaladDetails from "./Pages/Malad/MaladDetails";
+
+import GoregaonPage from "./Pages/Goregoan/GoregaonPage";
+import GoregaonDetails from "./Pages/Goregoan/GoregaonDetails";
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <Routes>
+        {/* Main Layout with Nested Routes */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<App />} />
+          
+          {/* Dahisar */}
+          <Route path="dahisar" element={<DahisarPage />} />
+          <Route path="dahisar/details" element={<DahisarDetails />} />
+
+          {/* Borivali */}
+          <Route path="borivali" element={<BorivaliPage />} />
+          <Route path="borivali/details" element={<BorivaliDetails />} />
+          
+          {/* Kandivali */}
+          <Route path="kandivali" element={<KandivaliPage />} />
+          <Route path="kandivali/details" element={<KandivaliDetails />} />
+
+          {/* Andheri */}
+          <Route path="andheri" element={<AndheriPage />} />
+          <Route path="andheri/details" element={<AndheriDetails />} />
+
+          {/* Malad */}
+          <Route path="malad" element={<MaladPage />} />
+          <Route path="malad/details" element={<MaladDetails />} />
+
+          {/* Goregaon */}
+          <Route path="goregaon" element={<GoregaonPage />} />
+          <Route path="goregaon/details" element={<GoregaonDetails />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
+);

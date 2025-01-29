@@ -2,12 +2,13 @@ import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
-import dahisar from "../../public/dahisar.jpeg";
-import borivali from "../../public/borivali.jpeg";
-import kandivali from "../../public/kandivali.jpeg";
-import malad from "../../public/malad.jpeg";
-import andheri from "../../public/andheri.jpeg";
-import goregoan from "../../public/goregoan.jpeg";
+import dahisar from "/dahisar.jpeg";
+import borivali from "/borivali.jpeg";
+import kandivali from "/kandivali.jpeg";
+import malad from "/malad.jpeg";
+import andheri from "/andheri.jpeg";
+import goregoan from "/goregoan.jpeg";
+
 
 const cards = [
   {
@@ -74,19 +75,19 @@ const cards = [
 
 const Card = ({ card }) => {
   return (
-    <a
-      href={card.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="max-w-sm cursor-pointer rounded-lg overflow-hidden shadow-lg bg-white mx-auto block"
-    >
-      <div className="relative">
+    <div className="max-w-sm cursor-pointer rounded-lg overflow-hidden shadow-lg bg-white mx-auto block">
+      <a
+        href={card.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative block"
+      >
         <img
           className="w-full h-48 object-cover p-3"
           src={card.image}
           alt={card.title}
         />
-      </div>
+      </a>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
         <div className="flex items-center gap-2 mb-4">
@@ -117,9 +118,10 @@ const Card = ({ card }) => {
           </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
+
 
 const CardList = () => {
   return (
