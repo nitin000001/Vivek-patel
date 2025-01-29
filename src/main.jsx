@@ -7,20 +7,20 @@ import App from "./App";
 import Layout from "./Components/Layout";
 
 // Dahisar Pages
-import DahisarPage from "./pages/Dahisar/DahisarPage";
-import DahisarDetails from "./pages/Dahisar/DahisarDetails";
+import DahisarPage from "./Pages/Dahisar/DahisarPage";
+import DahisarDetails from "./Pages/Dahisar/DahisarDetails";
 
 // Borivali Pages
-import BorivaliPage from "./pages/Borivali/BorivaliPage";
-import BorivaliDetails from "./pages/Borivali/BorivaliDetails";
+import BorivaliPage from "./Pages/Borivali/BorivaliPage";
+import BorivaliDetails from "./Pages/Borivali/BorivaliDetails";
 
 // Kandivali Pages
-import KandivaliPage from "./pages/Kandivali/KandivaliPage";
-import KandivaliDetails from "./pages/Kandivali/KandivaliDetails";
+import KandivaliPage from "./Pages/Kandivali/KandivaliPage";
+import KandivaliDetails from "./Pages/Kandivali/KandivaliDetails";
 
 // New Pages: Andheri, Malad, Goregaon
-import AndheriPage from "./pages/Andheri/AndheriPage";
-import AndheriDetails from "./pages/Andheri/AndheriDetails";
+import AndheriPage from "./Pages/Andheri/AndheriPage";
+import AndheriDetails from "./Pages/Andheri/AndheriDetails";
 
 import MaladPage from "./Pages/Malad/MaladPage";
 import MaladDetails from "./Pages/Malad/MaladDetails";
