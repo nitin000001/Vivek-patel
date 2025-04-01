@@ -28,39 +28,39 @@ import MaladDetails from "./Pages/Malad/MaladDetails";
 import GoregaonPage from "./Pages/Goregoan/GoregaonPage";
 import GoregaonDetails from "./Pages/Goregoan/GoregaonDetails";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        {/* Main Layout with Nested Routes */}
-        <Route path="/" element={<Layout />}>
-          <Route index element={<App />} />
+// createRoot(document.getElementById("root")).render(
+//   <StrictMode>
+//     <BrowserRouter>
+//       <Routes>
+//         {/* Main Layout with Nested Routes */}
+//         <Route path="/" element={<Layout />}>
+//           <Route index element={<App />} />
           
-          {/* Dahisar */}
-          <Route path="dahisar" element={<DahisarPage />} />
-          <Route path="dahisar/details" element={<DahisarDetails />} />
+//           {/* Dahisar */}
+//           <Route path="dahisar" element={<DahisarPage />} />
+//           <Route path="dahisar/details" element={<DahisarDetails />} />
 
-          {/* Borivali */}
-          <Route path="borivali" element={<BorivaliPage />} />
-          <Route path="borivali/details" element={<BorivaliDetails />} />
+//           {/* Borivali */}
+//           <Route path="borivali" element={<BorivaliPage />} />
+//           <Route path="borivali/details" element={<BorivaliDetails />} />
           
-          {/* Kandivali */}
-          <Route path="kandivali" element={<KandivaliPage />} />
-          <Route path="kandivali/details" element={<KandivaliDetails />} />
+//           {/* Kandivali */}
+//           <Route path="kandivali" element={<KandivaliPage />} />
+//           <Route path="kandivali/details" element={<KandivaliDetails />} />
 
-          {/* Andheri */}
-          <Route path="andheri" element={<AndheriPage />} />
-          <Route path="andheri/details" element={<AndheriDetails />} />
+//           {/* Andheri */}
+//           <Route path="andheri" element={<AndheriPage />} />
+//           <Route path="andheri/details" element={<AndheriDetails />} />
 
-          {/* Malad */}
-          <Route path="malad" element={<MaladPage />} />
-          <Route path="malad/details" element={<MaladDetails />} />
+//           {/* Malad */}
+//           <Route path="malad" element={<MaladPage />} />
+//           <Route path="malad/details" element={<MaladDetails />} />
 
-          {/* Goregaon */}
-          <Route path="goregaon" element={<GoregaonPage />} />
-          <Route path="goregaon/details" element={<GoregaonDetails />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>
-);
+//           {/* Goregaon */}
+//           <Route path="goregaon" element={<GoregaonPage />} />
+//           <Route path="goregaon/details" element={<GoregaonDetails />} />
+//         </Route>
+//       </Routes>
+//     </BrowserRouter>
+//   </StrictMode>
+// );
