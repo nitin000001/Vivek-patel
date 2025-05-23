@@ -11,21 +11,21 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-800 p-4 text-white">
-      <div className="flex justify-between items-center">
-        {/* Logo */}
+      {/* <div className="flex justify-between items-center">
+        
         <div>
           <Link to="/" className="hover:text-gray-300 text-xl font-bold">
             PropertyWallah
           </Link>
         </div>
 
-        {/* Hamburger Menu Icon */}
+     
         <div>
           <button onClick={toggleMenu} className="focus:outline-none">
             {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Navigation Links */}
       {isMenuOpen && (
